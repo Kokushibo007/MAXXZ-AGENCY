@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - MAXXZ-AGENCY</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="logo">MAXXZ-AGENCY</div>
+  </header>
+
+  <nav id="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="main">
+    <h1>Contact Us</h1>
+    <p>Let’s talk about your project, idea, or collaboration!</p>
+    
+    <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p><strong>Email:</strong> maxxzagency@gmail.com</p>
+      <p><strong>Instagram:</strong> @maxxzagency</p>
+      <p><strong>Location:</strong> India</p>
+    </div>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
