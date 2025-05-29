@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - MAXXZ-AGENCY</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="logo">MAXXZ-AGENCY</div>
+  </header>
+
+  <nav id="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="main">
+    <h1>Our Portfolio</h1>
+    <p>Check out some of our recent works across design, writing, video editing, and dropshipping:</p>
+    
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200.png?text=Logo+Design" alt="Logo Design">
+        <h3>Logo & Brand Kit</h3>
+        <p>Custom logo and brand style for an Instagram business account.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200.png?text=Instagram+Carousel" alt="Carousel Design">
+        <h3>Instagram Carousel</h3>
+        <p>Clean carousel with hooks and storytelling for content creators.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200.png?text=CapCut+Video" alt="Video Reel">
+        <h3>Reels & Shorts</h3>
+        <p>CapCut reels with trending audios and smooth transitions.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200.png?text=Product+Ad+Video" alt="Ad">
+        <h3>Product Ad Video</h3>
+        <p>High-converting product ad for a dropshipping client.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
